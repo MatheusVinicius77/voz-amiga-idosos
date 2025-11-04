@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/fav-icon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Blog - Voz Amiga</title>
+    <style>
+      .blog-card {
+        transition: transform 0.3s ease;
+        height: 100%;
+      }
+
+      .blog-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .blog-img {
+        height: 220px;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+
+      .blog-tag {
+        background-color: #F5DEB3;
+        color: #333;
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 0.95rem;
+        margin-right: 5px;
+        display: inline-block;
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+
+      .pagination .page-item.active .page-link {
+        background-color: #E89B5F;
+        border-color: #E89B5F;
+      }
+
+      .pagination .page-link {
+        color: #E89B5F;
+        font-size: 1.1rem;
+      }
+
+      .search-input {
+        border: 2px solid #F5DEB3;
+        border-radius: 20px;
+        padding: 10px 18px;
+        font-size: 1.1rem;
+      }
+
+      .search-btn {
+        background-color: #E89B5F;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 24px;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: #E89B5F; padding: 1rem 0"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/fav-icon.png" alt="Voz Amiga" style="height: 45px" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: none; background: rgba(255, 255, 255, 0.2)"
+        >
+          <span style="color: white; font-size: 1.8rem">☰</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="index.html"
+                style="color: white; font-weight: 600; margin: 0 1rem; font-size: 1.1rem"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="sobre.html"
+                style="color: white; font-weight: 600; margin: 0 1rem; font-size: 1.1rem"
+                >Sobre</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contato.html"
+                style="color: white; font-weight: 600; margin: 0 1rem; font-size: 1.1rem"
+                >Contato</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="blog.html"
+                style="color: white; font-weight: 600; margin: 0 1rem; font-size: 1.1rem"
+                >Blog</a
+              >
+            </li>
+          </ul>
+          <a
+            href="index.html#leadForm"
+            class="btn"
+            style="
+              background-color: #F5DEB3;
+              color: #333;
+              font-weight: bold;
+              border-radius: 25px;
+              padding: 10px 24px;
+              text-decoration: none;
+              font-size: 1.1rem;
+            "
+          >
+            Quero Companhia
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="sec1 p-5" id="sec1">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12">
+            <h1
+              class="titulo-sec1"
+              style="
+                color: #fff;
+                font-size: 2.8rem;
+                margin-bottom: 1.5rem;
+                font-weight: bold;
+              "
+            >
+              Blog Voz Amiga
+            </h1>
+            <p
+              style="
+                color: #fff;
+                font-size: 1.3rem;
+                line-height: 1.7;
+                max-width: 700px;
+                margin: 0 auto;
+              "
+            >
+              Compartilhamos histórias inspiradoras, dicas e informações sobre
+              como viver melhor, manter-se ativo e aproveitar cada momento da
+              vida.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-5" style="font-size: 2.5rem; color: #333">
+          Artigos Recentes
+        </h2>
+
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card blog-card">
+              <img
+                src="https://images.unsplash.com/photo-1454418747937-bd95bb945625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                class="blog-img"
+                alt="Pessoas conversando"
+              />
+              <div
+                class="card-body"
+                style="background-color: #E89B5F; color: white"
+              >
+                <div>
+                  <span class="blog-tag">Bem-estar</span>
+                  <span class="blog-tag">Saúde</span>
+                </div>
+                <h5 class="card-title" style="font-size: 1.3rem; margin-top: 1rem">
+                  A Importância de Manter Conexões Sociais
+                </h5>
+                <p class="card-text" style="font-size: 1.1rem; line-height: 1.6">
+                  Descubra como manter contato com outras pessoas pode melhorar
+                  sua saúde, trazer mais alegria e fazer você se sentir mais
+                  feliz no dia a dia.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small style="font-size: 1rem">15 de outubro, 2026</small>
+                  <button class="button-form">Ler mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card blog-card">
+              <img
+                src="https://images.unsplash.com/photo-1516307365426-bea591f05011?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                class="blog-img"
+                alt="Pessoa feliz"
+              />
+              <div
+                class="card-body"
+                style="background-color: #E89B5F; color: white"
+              >
+                <div>
+                  <span class="blog-tag">Histórias</span>
+                  <span class="blog-tag">Inspiração</span>
+                </div>
+                <h5 class="card-title" style="font-size: 1.3rem; margin-top: 1rem">
+                  Histórias de Quem Encontrou Novos Amigos
+                </h5>
+                <p class="card-text" style="font-size: 1.1rem; line-height: 1.6">
+                  Conheça histórias emocionantes de pessoas que encontraram
+                  companhia e amizade através do Voz Amiga e como isso mudou
+                  suas vidas.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small style="font-size: 1rem">8 de outubro, 2026</small>
+                  <button class="button-form">Ler mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card blog-card">
+              <img
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                class="blog-img"
+                alt="Pessoa usando tecnologia"
+              />
+              <div
+                class="card-body"
+                style="background-color: #E89B5F; color: white"
+              >
+                <div>
+                  <span class="blog-tag">Tecnologia</span>
+                  <span class="blog-tag">Dicas</span>
+                </div>
+                <h5 class="card-title" style="font-size: 1.3rem; margin-top: 1rem">
+                  Como Fazer Videochamadas de Forma Fácil
+                </h5>
+                <p class="card-text" style="font-size: 1.1rem; line-height: 1.6">
+                  Um guia simples e prático para você aprender a fazer
+                  videochamadas e conversar com pessoas queridas, mesmo que
+                  estejam longe.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small style="font-size: 1rem">1 de outubro, 2026</small>
+                  <button class="button-form">Ler mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="div-media">
+        <ul class="list-media">
+          <li><img src="assets/facebook (1).png" alt="Facebook" /></li>
+          <li><img src="assets/twitter.png" alt="Twitter" /></li>
+          <li><img src="assets/instagram.png" alt="Instagram" /></li>
+          <li><img src="assets/linkedin.png" alt="LinkedIn" /></li>
+        </ul>
+        <p class="text-center text-white" style="font-size: 1rem">
+          © 2026 Voz Amiga - Todos os direitos reservados
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>
