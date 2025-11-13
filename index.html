@@ -238,15 +238,6 @@
 
                 <input
                   class="input"
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  placeholder="Seu Email"
-                /><br /><br />
-
-                <input
-                  class="input"
                   type="text"
                   id="telefone"
                   name="telefone"
@@ -289,7 +280,7 @@
           console.log("Formulário enviado com sucesso!");
           const data = {
             nome: document.getElementById("nome").value,
-            email: document.getElementById("email").value,
+            email: "",
             telefone: document.getElementById("telefone").value,
           };
 
